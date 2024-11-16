@@ -1,6 +1,4 @@
 # greenden-site
-Greenden is a responsive website showcasing sustainable and eco-friendly plants and gardening products. It includes a contact form and navigation for users to explore various products and services offered by Greenden.
-# Greenden
 
 Greenden is a responsive website designed to showcase sustainable and eco-friendly plants and gardening products. The website features a modern, clean layout with a navigation menu, a contact form, and a product showcase section.
 
