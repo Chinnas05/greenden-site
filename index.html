@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+</head>
+
+<body>
+  <!-- Responsive Navbar -->
+<nav class="bg-green-100 p-4 flex justify-between shadow-xl sticky top-0 z-10">
+    <h1 class="text-2xl font-bold text-green-900">GREENDEN</h1>
+
+    <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="24" height="24">
+        <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+    </svg>
+
+    <ul class="flex gap-5 text-green-800 hidden md:flex font-semibold">
+        <li><a class="hover:underline hover:text-green-900" href="">HOME</a></li>
+        <li><a class="hover:underline hover:text-green-900" href="products.html">PRODUCTS</a></li>
+        <li><a class="hover:underline hover:text-green-900" href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- Header Section -->
+<section class="bg-green-50 p-8 flex flex-col items-center">
+    <div class="flex justify-between w-full">
+        <div class="flex flex-col justify-center items-start ml-12">
+            <p class="text-green-700 mb-2">WE OFFER YOU A WIDE RANGE OF ARTIFICIAL AND NATURAL FLOWERS</p>
+            <h2 class="font-bold text-4xl mb-5 text-green-900">PLANTS FOR YOUR INTERIOR</h2>
+            <div class="flex gap-4 mb-4">
+                <button class="bg-green-800 text-white px-6 py-2 rounded hover:bg-green-900">Shop now</button>
+                <button class="px-6 py-2 border border-green-800 rounded hover:bg-green-100">Watch video</button>
+            </div>
+            <p class="text-green-700">160+ Plant Species | 100+ Clients</p>
+        </div>
+        <div>
+            <img src="./image/main.jpg" alt="Main Plant" class="w-96 h-auto hidden md:block rounded-xl shadow-lg">
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="text-center bg-green-100 py-10">
+    <h2 class="text-3xl font-bold text-gray-800 mt-5 mb-3">About Us</h2>
+    <p class="text-gray-600 mb-8">We bring nature closer to you, inspiring harmony and sustainable living through our carefully curated collections and services.</p>
+
+    <div class="md:flex justify-center">
+        <div class="border border-blue-300 bg-green-50 p-6 m-6 rounded-lg shadow-md hover:bg-green-200">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="blue" class="w-20 inline">
+                <path
+                    d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+            </svg>
+
+            <h2 class="text-xl font-medium text-blue-600 mt-4">Large Assortment</h2>
+            <p class="text-gray-600 mt-2">Explore a wide variety of natural products and eco-friendly solutions, carefully designed to promote a sustainable lifestyle and a deep connection to nature.</p>
+        </div>
+
+        <div class="border border-green-300 bg-green-50 p-6 m-6 rounded-lg shadow-md hover:bg-green-200">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" class="w-20 inline">
+                <path fill-rule="evenodd"
+                    d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z"
+                    clip-rule="evenodd" />
+            </svg>
+
+            <h2 class="text-xl font-medium text-green-600 mt-4">Free and Fast Shipping</h2>
+            <p class="text-gray-600 mt-2">Enjoy complimentary and expedited shipping services, ensuring that your favorite products arrive quickly and in perfect condition, wherever you are.</p>
+        </div>
+
+        <div class="border border-red-300 bg-green-50 p-6 m-6 rounded-lg shadow-md hover:bg-green-200">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="red" class="w-20 inline">
+                <path
+                    d="M3.505 2.365A41.369 41.369 0 0 1 9 2c1.863 0 3.697.124 5.495.365 1.247.167 2.18 1.108 2.435 2.268a4.45 4.45 0 0 0-.577-.069 43.141 43.141 0 0 0-4.706 0C9.229 4.696 7.5 6.727 7.5 8.998v2.24c0 1.413.67 2.735 1.76 3.562l-2.98 2.98A.75.75 0 0 1 5 17.25v-3.443c-.501-.048-1-.106-1.495-.172C2.033 13.438 1 12.162 1 10.72V5.28c0-1.441 1.033-2.717 2.505-2.914Z" />
+                <path
+                    d="M14 6c-.762 0-1.52.02-2.271.062C10.157 6.148 9 7.472 9 8.998v2.24c0 1.519 1.147 2.839 2.71 2.935.214.013.428.024.642.034.2.009.385.09.518.224l2.35 2.35a.75.75 0 0 0 1.28-.531v-2.07c1.453-.195 2.5-1.463 2.5-2.915V8.998c0-1.526-1.157-2.85-2.729-2.936A41.645 41.645 0 0 0 14 6Z" />
+            </svg>
+
+            <h2 class="text-xl font-medium text-red-600 mt-4">24/7 Support</h2>
+            <p class="text-gray-600 mt-2">Our dedicated support team is here to help you around the clock, providing personalized assistance and solutions whenever you need them.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Best Seller -->
+<div class="p-8 bg-green-50">
+    <h1 class="font-bold text-center text-3xl text-green-800 mb-6">Best Seller</h1>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+            <img src="./image/Rose Plant.jpeg" class="w-64 h-64 rounded-lg mx-auto shadow-lg transform hover:scale-105" alt="Rose Plant">
+            <h1 class="font-bold text-green-800 mt-4">Rose Plant</h1>
+            <p class="text-green-700">₹1,500</p>
+        </div>
+        <div class="text-center">
+            <img src="./image/Money Plant.jpeg" class="w-64 h-64 rounded-lg mx-auto shadow-lg transform hover:scale-105" alt="Money Plant">
+            <h1 class="font-bold text-green-800 mt-4">Money Plant</h1>
+            <p class="text-green-700">₹800</p>
+        </div>
+        <div class="text-center">
+            <img src="./image/Bamboo Plant.jpeg" class="w-64 h-64 rounded-lg mx-auto shadow-lg transform hover:scale-105" alt="Bamboo Plant">
+            <h1 class="font-bold text-green-800 mt-4">Bamboo Plant</h1>
+            <p class="text-green-700">₹1,200</p>
+        </div>
+        <div class="text-center">
+            <img src="./image/Succulent Plant.jpeg" class="w-64 h-64 rounded-lg mx-auto shadow-lg transform hover:scale-105" alt="Succulent">
+            <h1 class="font-bold text-green-800 mt-4">Succulent</h1>
+            <p class="text-green-700">₹600</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="bg-green-200 p-6 mt-8 text-center">
+    <h1 class="text-2xl font-bold text-green-900">GREENDEN</h1>
+    <p class="text-green-700">Your go-to source for sustainable and eco-friendly plants and gardening products.</p>
+    <p class="text-green-600 mt-2">© 2024 Greenden.com</p>
+</div>
+
+
+
+</body>
+
+</html>
