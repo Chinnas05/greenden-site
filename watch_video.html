@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watch Video</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Responsive Navbar -->
+  <nav class="bg-green-100 p-4 flex justify-between shadow-xl sticky top-0 z-10">
+    <h1 class="text-2xl font-bold text-green-900">GREENDEN</h1>
+
+    <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="24" height="24">
+        <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+    </svg>
+
+    <ul class="flex gap-5 text-green-800 hidden md:flex font-semibold">
+        <li><a class="hover:underline hover:text-green-900" href="">HOME</a></li>
+        <li><a class="hover:underline hover:text-green-900" href="products.html">PRODUCTS</a></li>
+        <li><a class="hover:underline hover:text-green-900" href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main class="container mx-auto py-12">
+    <section class="space-y-12">
+        <!-- Video Section -->
+        <div class="text-center space-y-6">
+            <h2 class="text-3xl font-bold text-gray-800">Featured Video</h2>
+            
+            <!-- Local Video Player -->
+            <div class="bg-white p-4 rounded-lg shadow-lg max-w-4xl mx-auto">
+                <video id="featured-video" controls class="w-full rounded-lg">
+                    <source src="path/to/your/video.mp4" type="video/mp4">
+                    <source src="path/to/your/video.webm" type="video/webm">
+                    <source src="path/to/your/video.ogv" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Best Seller -->
+<div class="p-8 bg-green-50">
+    <h1 class="font-bold text-center text-3xl text-green-800 mb-6">Best Seller</h1>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+            <video class="w-64 h-64 rounded-lg mx-auto shadow-lg transform hover:scale-105 cursor-pointer" onclick="changeVideo('./video/Rose_Plant.mp4')" controls>
+                <source src="./video/Rose_Plant.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1 class="font-bold text-green-800 mt-4">Rose Plant</h1>
+            <p class="text-green-700">₹1,500</p>
+        </div>
+        <div class="text-center">
+            <video class="w-64 h-64 rounded-lg mx-auto shadow-lg transform hover:scale-105 cursor-pointer" onclick="changeVideo('./video/Money_Plant.mp4')" controls>
+                <source src="./video/Money_Plant.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1 class="font-bold text-green-800 mt-4">Money Plant</h1>
+            <p class="text-green-700">₹800</p>
+        </div>
+        <div class="text-center">
+            <video class="w-64 h-64 rounded-lg mx-auto shadow-lg transform hover:scale-105 cursor-pointer" onclick="changeVideo('./video/Bamboo_Plant.mp4')" controls>
+                <source src="./video/Bamboo_Plant.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1 class="font-bold text-green-800 mt-4">Bamboo Plant</h1>
+            <p class="text-green-700">₹1,200</p>
+        </div>
+        <div class="text-center">
+            <video class="w-64 h-64 rounded-lg mx-auto shadow-lg transform hover:scale-105 cursor-pointer" onclick="changeVideo('./video/Succulent_Plant.mp4')" controls>
+                <source src="./video/Succulent_Plant.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1 class="font-bold text-green-800 mt-4">Succulent</h1>
+            <p class="text-green-700">₹600</p>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for Dynamic Video Change -->
+<script>
+    function changeVideo(videoSrc) {
+        var featuredVideo = document.getElementById('featured-video');
+        var sources = featuredVideo.getElementsByTagName('source');
+
+        // Update the video source to the clicked video
+        sources[0].src = videoSrc;
+        featuredVideo.load(); // Reload the video to apply the new source
+        featuredVideo.play(); // Optionally auto-play the video when clicked
+    }
+</script>
+
+
+
+<!-- Footer -->
+<div class="bg-green-200 p-6 mt-8 text-center">
+    <h1 class="text-2xl font-bold text-green-900">GREENDEN</h1>
+    <p class="text-green-700">Your go-to source for sustainable and eco-friendly plants and gardening products.</p>
+    <p class="text-green-600 mt-2">© 2024 Greenden.com</p>
+</div>
+
+</body>
+</html>

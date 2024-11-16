@@ -6,25 +6,41 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 <!-- Responsive Navbar -->
-<nav class="bg-green-200 p-4 flex justify-between shadow-xl sticky top-0 z-10">
+<nav class="bg-green-100 p-4 flex justify-between shadow-xl sticky top-0 z-10">
     <h1 class="text-2xl font-bold text-green-900">GREENDEN</h1>
+    <div class="relative">
+        <!-- Toggle Button -->
+        <label for="menu-toggle" class="cursor-pointer md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="24" height="24" class="text-gray-800">
+                <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+        </label>
+    
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+    
+        <!-- Side Navigation Menu -->
+        <div class="fixed top-0 right-0 w-64 h-full bg-green-800 text-white transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out shadow-lg z-50">
+            <label for="menu-toggle" class="absolute top-4 right-4 text-white text-xl font-bold cursor-pointer">&times;</label>
+            <nav class="mt-10 space-y-4 px-6">
+                <a href="index.html" class="block text-lg font-semibold hover:text-green-300">Home</a>
+                <a href="products.html" class="block text-lg font-semibold hover:text-green-300">PRODUCTS</a>
+                <a href="contact.html" class="block text-lg font-semibold hover:text-green-300">CONTACT</a>
+            </nav>
+        </div>
+    </div>
 
-    <svg class="md:hidden text-green-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="24" height="24">
-        <path fill-rule="evenodd"
-            d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
-            clip-rule="evenodd" />
-    </svg>
-
-    <ul class="flex gap-5 text-green-700 hidden md:flex">
-        <li><a class="hover:underline hover:text-green-900" href="index.html">HOME</a></li>
-        <li><a class="hover:underline hover:text-green-900" href="">PRODUCTS</a></li>
+    <ul class="flex gap-5 text-green-800 hidden md:flex font-semibold">
+        <li><a class="hover:underline hover:text-green-900" href="">HOME</a></li>
+        <li><a class="hover:underline hover:text-green-900" href="products.html">PRODUCTS</a></li>
         <li><a class="hover:underline hover:text-green-900" href="contact.html">CONTACT</a></li>
     </ul>
 </nav>
+
 
 <!-- Newsletter Section -->
 <section class="text-center bg-green-100 p-5">
